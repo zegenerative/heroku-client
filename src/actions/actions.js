@@ -3,7 +3,7 @@ import request from 'superagent'
 export const ALL_IMAGES = 'ALL_IMAGES'
 
 // const baseUrl = 'http://localhost:4000'
-const baseUrl = 'https://polar-woodland-08086.herokuapp.com/'
+const baseUrl = 'https://morning-cove-04058.herokuapp.com'
 
 function allImages (payload) {
   return {
@@ -59,7 +59,7 @@ function newImage (payload) {
 }
 
 export const createImage = data => (dispatch, getState) => {
-    console.log('from the action creator creatImage: ', data)
+    console.log('from the action creator asdcreatImage: ', data)
     const state = getState()
     const { user } = state
 
